@@ -1,0 +1,24 @@
+package com.design.Adapter;
+
+/**
+ * КвадратныеКолышки несовместимы с КруглымиОтверстиями (они остались в проекте
+ * после бывших разработчиков). Но мы должны как-то интегрировать их в нашу
+ * систему.
+ */
+
+public class SquarePeg {
+
+    private double width;
+
+    public SquarePeg(double width) {
+        this.width = width;
+    }
+
+    public double getWidth() {
+        return this.width;
+    }
+
+    public double getSquare() {
+        return Math.pow(this.width, 2);
+    }
+}
