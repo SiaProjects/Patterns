@@ -2,6 +2,9 @@ package com.design.Decorator;
 
 import java.io.*;
 
+// Один из конкретных компонентов реализует базовую
+// функциональность.
+
 public class FileDataSource implements DataSource {
 
     private String name;
@@ -10,6 +13,7 @@ public class FileDataSource implements DataSource {
         this.name = name;
     }
 
+    // Записать данные в файл.
     @Override
     public void writeData(String data) {
 
@@ -22,6 +26,7 @@ public class FileDataSource implements DataSource {
         }
     }
 
+    // Прочитать данные из файла.
     @Override
     public String readData() {
 

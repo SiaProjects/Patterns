@@ -2,6 +2,9 @@ package com.design.Decorator;
 
 import java.util.Base64;
 
+// Конкретные декораторы добавляют что-то своё к базовому
+// поведению обёрнутого компонента.
+
 public class EncryptionDecorator extends DataSourceDecorator {
 
     public EncryptionDecorator(DataSource source) {

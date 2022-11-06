@@ -9,6 +9,9 @@ import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
+// Декорировать можно не только базовые компоненты, но и уже
+// обёрнутые объекты.
+
 public class CompressionDecorator extends DataSourceDecorator {
 
     private int compLevel = 6;

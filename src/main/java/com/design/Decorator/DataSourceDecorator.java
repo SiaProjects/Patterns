@@ -1,5 +1,7 @@
 package com.design.Decorator;
 
+// Родитель всех декораторов содержит код обёртывания.
+
 public abstract class DataSourceDecorator implements DataSource {
 
     private DataSource wrappee;
